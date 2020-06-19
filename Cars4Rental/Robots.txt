@@ -1,0 +1,6 @@
+﻿ROBOTS.txt
+User-agent: *
+Disallow: /js/
+Disallow: /lib/
+
+SITEMAP: 

@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center jumbotron">
+    <h1 class="display-4" style="padding-top:90px">Welcome</h1>
+    <p class="lead">I used asp.Net framework to build this app and Bootstrap for styling</p>
+</div>
+
+
+<article style="margin-top:130px;">
+    <div class="container">
+        <h1 class="display-4 text-center" style="margin-bottom:30px; font-family: 'Niconne', cursive;">The Sales Articles</h1>
+        <div class="row">
+            <div class="col-md-4 text-center" style="padding-top:50px">
+                <h2>Our Inventory</h2>
+                <p class="card-body">
+                    @Html.ActionLink("Cars", "Cars") <br />
+                    @Html.ActionLink("Trucks", "Trucks") <br />
+                    @Html.ActionLink("Bikes", "Bikes")
+                </p>
+            </div>
+            <div class="col-md-4 listing-img">
+                <img src="./assets/listings.jpg" width="100%" height="310px" alt="Alternate Text" />
+            </div>
+            <div class="col-md-4 text-center" style="padding-top:50px">
+                <h2>Our Sales Force</h2>
+                <p class="card-body">
+                    @Html.ActionLink("Sales", "Sales") <br />
+                    @Html.ActionLink("Agents", "Agents") <br />
+                    @Html.ActionLink("Reviews", "Reviews")
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

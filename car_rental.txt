@@ -1,0 +1,34 @@
+@DateTime.Today.ToShortDateString()
+
+ftps Endpoint:
+ftps://waws-prod-dm1-137.ftp.azurewebsites.windows.net/site/wwwroot
+
+ftps username:
+family-albums__family-albums-building\$family-albums__family-albums-building
+
+password for ftps:
+7oDsoYfA0L0uw3WyoncZdgcxEkqiyNv3z00KT1hbtfvemYnW4tkDA2HeeNkG
+
+
+ROBOTS.txt
+User-agent: *
+Disallow: /js/
+Disallow: /lib/
+
+SITEMAP: 
+
+
+////////////////////////////
+-------sales page-----
+<button type="button" onclick="loadSales-1()">Get Info</button>
+
+function loadSales-1() {
+   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+    if(this.readyState == 4 && this.status == 200) {
+      document.getElementById("msg").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "Sales-1", true);
+  xhttp.send();
+}
