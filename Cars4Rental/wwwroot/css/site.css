@@ -83,22 +83,38 @@ footer {
 }
 
 /*Extra Css Code*/
-.jumbotron {
+.box-1 {
     background: url(../assets/show-cars-1.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 70vh;
+    height: 60vh;
     margin-top: 0;
     color: white;
 }
 
-.listing-img {
-    max-height: 350px;
-    margin-left: auto;
-    margin-right: auto;
+.brand {
+    word-spacing: 5%;
+    text-align: center;
 }
+
+.middle-content-wrapper {
+    margin-top: 60px;
+    width: 70px;
+    height: auto;
+    text-wrap:inherit;
+    float: right;
+    justify-content: center;
+    text-align: center;
+}
+
+    .middle-content-img {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
 
 li {
     list-style: none;
@@ -106,6 +122,6 @@ li {
 
 @media screen (max-width:768px) {
     .jumbotron {
-        height: auto;
+        height: 20vh;
     }
 }
